@@ -1,0 +1,28 @@
+
+#wrapper{
+  margin:20px auto;
+  width: 980px;
+}
+#clearButton{
+  margin: 10px auto;
+  padding: 5px 20px;
+  display: block;
+  background-color: rgb(26, 128, 226);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#container{
+  width: 980px;
+  height: 980px;
+  outline: 1px solid black;
+}
+.grid{
+  margin: o;
+  padding: 0;
+  outline: 1px solid green;
+  position: relative;
+  background-color: blue;
+}
