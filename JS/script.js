@@ -1,23 +1,14 @@
 $(document).ready(function() {
-	createMosaic = function(size) {
-		var $container = $("#container")
-		$container.empty();
-		scale = 500 / size;
-		for (i = 0; i < size; i++) {
-			var newRowDiv = $('<div class="row" style="height:' + scale +'; width: 500px;"></div>');
-			$container.append(newRowDiv);
-			for (j = 0; j < size; j++) {
-				var newCellDiv = $('<div class="cell" style="display: inline-block; height:' + scale + '; width:' + scale + ';"></div>');
-				newRowDiv.append(newCellDiv);
-				newCellDiv.hover(function() {
-					$(this).css("background-color","black");
-				});
-			}
-		}
-	}
-	createMosaic(16);
-	$("button").click(function() {
-		currentSideInt = prompt("How many squares per side?");
-		createMosaic(currentSideInt);
-	});
+	startGrid(16);
 });
+function startGrid(x){
+	for(var row=1;row<=x;row++){
+		for(var col=1;col<=x;col++){
+		$("#wrapper > #container").append('<div class="grid"></div>');
+	}
+	}
+	$(".grid").width(980/x);
+	$(".grid").height(980/x);
+
+
+}

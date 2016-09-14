@@ -23,6 +23,7 @@
   margin: o;
   padding: 0;
   outline: 1px solid green;
-  position: relative;
   background-color: blue;
+  display: inline-block;
+
 }
